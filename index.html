@@ -8,6 +8,9 @@
 
        <link href="https://fonts.googleapis.com/css?family=Playfair+Display+SC" rel="stylesheet">
        
+       <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+       
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
         
@@ -16,7 +19,7 @@
         
     </head>
     <body>
-        <div class="jumbotron">
+        <div class="jumbotron animated zoomIn">
             <div class="container text-center">
                <h1 class="display-1">Roman Numeral Convertor</h1>
                 <div class = "row justify-content-center">
@@ -25,9 +28,9 @@
                 <div class="row justify-content-center">
                    <div class="col-12 col-md-5">
                         <div class="input-group">
-                        <input id="number" type="text" class="form-control" placeholder="Enter Decimal or Roman" aria-label="Enter number" maxlength = "25" required onkeypress="getNumber(event)">
+                        <input id="number" type="text" class="form-control " placeholder="Enter Decimal or Roman" aria-label="Enter number" maxlength = "25" required onkeypress="getNumber(event)">
                         <span class="input-group-btn">
-                            <button id="submit" class="btn btn-primary" type="button" onclick="getNumber(event)">Go!</button>
+                            <button id="submit" class="btn btn-primary animated pulse infinite" type="button" onclick="getNumber(event)">Go!</button>
                         </span>
                     </div>
                    </div>

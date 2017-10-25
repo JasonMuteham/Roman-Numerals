@@ -85,6 +85,12 @@ function getNumber(event){
         var rn = romanNumerals(inp.value);
     }
     data.innerHTML = inp.value +" = "+rn;
+    
+    data.classList.remove('animated','tada');
+    setTimeout(function(){
+          data.classList.add('animated','tada');
+    },20);
+  
 
     inp.value = "";
 }
